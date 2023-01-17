@@ -1,0 +1,32 @@
+/* Tooltips */
+.tooltip-parent {
+  position: relative;
+}
+
+.tooltip-child {
+  position: absolute;
+  white-space: nowrap;
+  font-size: 0.875rem /* 14px */;
+  line-height: 1.25rem /* 20px */;
+  color: white;
+  background-color: rgb(31, 41, 55);
+  border-radius: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  z-index: 10;
+  bottom: 110%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.tooltip-parent .tooltip-child {
+  display: none;
+}
+.tooltip-parent:hover .tooltip-child {
+  display: block;
+}
+.tooltip-parent:hover .tooltip-child:hover {
+  display: none;
+}
